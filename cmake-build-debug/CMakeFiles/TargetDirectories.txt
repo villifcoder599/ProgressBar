@@ -1,0 +1,3 @@
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
