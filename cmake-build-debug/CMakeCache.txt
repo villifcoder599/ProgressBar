@@ -254,25 +254,25 @@ ProgressBar_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar
 ProgressBar_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar
 
 //Cleared.
-WX_adv:FILEPATH=WX_adv-NOTFOUND
+WX_adv:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_adv.a
 
 //Cleared.
 WX_advd:FILEPATH=WX_advd-NOTFOUND
 
 //Cleared.
-WX_aui:FILEPATH=WX_aui-NOTFOUND
+WX_aui:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_aui.a
 
 //Cleared.
 WX_auid:FILEPATH=WX_auid-NOTFOUND
 
 //Cleared.
-WX_base:FILEPATH=WX_base-NOTFOUND
+WX_base:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u.a
 
 //Cleared.
 WX_based:FILEPATH=WX_based-NOTFOUND
 
 //Cleared.
-WX_core:FILEPATH=WX_core-NOTFOUND
+WX_core:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_core.a
 
 //Cleared.
 WX_cored:FILEPATH=WX_cored-NOTFOUND
@@ -284,31 +284,31 @@ WX_dbgrid:FILEPATH=WX_dbgrid-NOTFOUND
 WX_dbgridd:FILEPATH=WX_dbgridd-NOTFOUND
 
 //Cleared.
-WX_expat:FILEPATH=WX_expat-NOTFOUND
+WX_expat:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxexpat.a
 
 //Cleared.
 WX_expatd:FILEPATH=WX_expatd-NOTFOUND
 
 //Cleared.
-WX_gl:FILEPATH=WX_gl-NOTFOUND
+WX_gl:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_gl.a
 
 //Cleared.
 WX_gld:FILEPATH=WX_gld-NOTFOUND
 
 //Cleared.
-WX_html:FILEPATH=WX_html-NOTFOUND
+WX_html:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_html.a
 
 //Cleared.
 WX_htmld:FILEPATH=WX_htmld-NOTFOUND
 
 //Cleared.
-WX_jpeg:FILEPATH=WX_jpeg-NOTFOUND
+WX_jpeg:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxjpeg.a
 
 //Cleared.
 WX_jpegd:FILEPATH=WX_jpegd-NOTFOUND
 
 //Cleared.
-WX_media:FILEPATH=WX_media-NOTFOUND
+WX_media:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_media.a
 
 //Cleared.
 WX_mediad:FILEPATH=WX_mediad-NOTFOUND
@@ -320,7 +320,7 @@ WX_mono:FILEPATH=WX_mono-NOTFOUND
 WX_monod:FILEPATH=WX_monod-NOTFOUND
 
 //Cleared.
-WX_net:FILEPATH=WX_net-NOTFOUND
+WX_net:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u_net.a
 
 //Cleared.
 WX_netd:FILEPATH=WX_netd-NOTFOUND
@@ -332,13 +332,13 @@ WX_odbc:FILEPATH=WX_odbc-NOTFOUND
 WX_odbcd:FILEPATH=WX_odbcd-NOTFOUND
 
 //Cleared.
-WX_png:FILEPATH=WX_png-NOTFOUND
+WX_png:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxpng.a
 
 //Cleared.
 WX_pngd:FILEPATH=WX_pngd-NOTFOUND
 
 //Cleared.
-WX_propgrid:FILEPATH=WX_propgrid-NOTFOUND
+WX_propgrid:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_propgrid.a
 
 //Cleared.
 WX_propgridd:FILEPATH=WX_propgridd-NOTFOUND
@@ -350,61 +350,61 @@ WX_qa:FILEPATH=WX_qa-NOTFOUND
 WX_qad:FILEPATH=WX_qad-NOTFOUND
 
 //Cleared.
-WX_regex:FILEPATH=WX_regex-NOTFOUND
+WX_regex:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxregexu.a
 
 //Cleared.
 WX_regexd:FILEPATH=WX_regexd-NOTFOUND
 
 //Cleared.
-WX_ribbon:FILEPATH=WX_ribbon-NOTFOUND
+WX_ribbon:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_ribbon.a
 
 //Cleared.
 WX_ribbond:FILEPATH=WX_ribbond-NOTFOUND
 
 //Cleared.
-WX_richtext:FILEPATH=WX_richtext-NOTFOUND
+WX_richtext:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_richtext.a
 
 //Cleared.
 WX_richtextd:FILEPATH=WX_richtextd-NOTFOUND
 
 //Cleared.
-WX_scintilla:FILEPATH=WX_scintilla-NOTFOUND
+WX_scintilla:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxscintilla.a
 
 //Cleared.
 WX_scintillad:FILEPATH=WX_scintillad-NOTFOUND
 
 //Cleared.
-WX_stc:FILEPATH=WX_stc-NOTFOUND
+WX_stc:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_stc.a
 
 //Cleared.
 WX_stcd:FILEPATH=WX_stcd-NOTFOUND
 
 //Cleared.
-WX_tiff:FILEPATH=WX_tiff-NOTFOUND
+WX_tiff:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxtiff.a
 
 //Cleared.
 WX_tiffd:FILEPATH=WX_tiffd-NOTFOUND
 
 //Cleared.
-WX_webview:FILEPATH=WX_webview-NOTFOUND
+WX_webview:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_webview.a
 
 //Cleared.
 WX_webviewd:FILEPATH=WX_webviewd-NOTFOUND
 
 //Cleared.
-WX_xml:FILEPATH=WX_xml-NOTFOUND
+WX_xml:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u_xml.a
 
 //Cleared.
 WX_xmld:FILEPATH=WX_xmld-NOTFOUND
 
 //Cleared.
-WX_xrc:FILEPATH=WX_xrc-NOTFOUND
+WX_xrc:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_xrc.a
 
 //Cleared.
 WX_xrcd:FILEPATH=WX_xrcd-NOTFOUND
 
 //Cleared.
-WX_zlib:FILEPATH=WX_zlib-NOTFOUND
+WX_zlib:FILEPATH=C:/wxWidgets-3.1.1/lib/gcc_dll/libwxzlib.a
 
 //Cleared.
 WX_zlibd:FILEPATH=WX_zlibd-NOTFOUND
@@ -588,9 +588,9 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding wxWidgets
-FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_gl.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_core.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u_net.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxpng.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxtiff.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxjpeg.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxzlib.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxregexu.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxexpat.a;opengl32;glu32;winmm;comctl32;uuid;oleacc;uxtheme;rpcrt4;shlwapi;version;wsock32][C:/wxWidgets-3.1.1/lib/gcc_dll/mswu;C:/wxWidgets-3.1.1/include][cfound components: gl core base net png tiff jpeg zlib regex expat ][v3.1.1()]
+FIND_PACKAGE_MESSAGE_DETAILS_wxWidgets:INTERNAL=[C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_core.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxpng.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxtiff.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxjpeg.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxzlib.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxregexu.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxexpat.a;winmm;comctl32;uuid;oleacc;uxtheme;rpcrt4;shlwapi;version;wsock32][C:/wxWidgets-3.1.1/lib/gcc_dll/mswu;C:/wxWidgets-3.1.1/include][cfound components: core base png tiff jpeg zlib regex expat ][v3.1.1()]
 //wxWidgets_LIB_DIR
-WX_LIB_DIR:INTERNAL=C:/wxWidgets-3.1.1/build1/lib/vc_dll
+WX_LIB_DIR:INTERNAL=C:/wxWidgets-3.1.1/lib/gcc_dll
 //wxWidgets_ROOT_DIR
 WX_ROOT_DIR:INTERNAL=C:/wxWidgets-3.1.1
 //ADVANCED property for variable: WX_adv

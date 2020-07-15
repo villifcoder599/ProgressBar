@@ -122,6 +122,60 @@ ProgressBar/fast:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/build
 .PHONY : ProgressBar/fast
 
+Observer.obj: Observer.cpp.obj
+
+.PHONY : Observer.obj
+
+# target to build an object file
+Observer.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.obj
+.PHONY : Observer.cpp.obj
+
+Observer.i: Observer.cpp.i
+
+.PHONY : Observer.i
+
+# target to preprocess a source file
+Observer.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.i
+.PHONY : Observer.cpp.i
+
+Observer.s: Observer.cpp.s
+
+.PHONY : Observer.s
+
+# target to generate assembly for a file
+Observer.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.s
+.PHONY : Observer.cpp.s
+
+Subject.obj: Subject.cpp.obj
+
+.PHONY : Subject.obj
+
+# target to build an object file
+Subject.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.obj
+.PHONY : Subject.cpp.obj
+
+Subject.i: Subject.cpp.i
+
+.PHONY : Subject.i
+
+# target to preprocess a source file
+Subject.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.i
+.PHONY : Subject.cpp.i
+
+Subject.s: Subject.cpp.s
+
+.PHONY : Subject.s
+
+# target to generate assembly for a file
+Subject.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.s
+.PHONY : Subject.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +212,12 @@ help:
 	@echo ... ProgressBar
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Observer.obj
+	@echo ... Observer.i
+	@echo ... Observer.s
+	@echo ... Subject.obj
+	@echo ... Subject.i
+	@echo ... Subject.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

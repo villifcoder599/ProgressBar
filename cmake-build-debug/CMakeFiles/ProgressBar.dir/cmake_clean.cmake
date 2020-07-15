@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
+  "CMakeFiles/ProgressBar.dir/Subject.cpp.obj"
   "CMakeFiles/ProgressBar.dir/main.cpp.obj"
   "ProgressBar.exe"
   "ProgressBar.exe.manifest"
