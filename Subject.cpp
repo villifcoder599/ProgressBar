@@ -4,19 +4,17 @@
 
 
 #include "Subject.h"
-#include "Observer.h"
 
-const void Subject::attach(Observer *obs) {
+void Subject::attach(Observer *obs) {
     if(obs!= nullptr)
-        observers.push_back(*obs);
+        observers.push_back(obs);
 }
-const void Subject::detach(Observer *obs) {
+void Subject::detach(Observer *obs) {
     if(obs!=nullptr)
-        observers.remove(*obs);
+        observers.remove(obs);
 }
 
-void Subject::notify(int *Subject) {
-    for(auto item:observers){
-        (item).update(this);
-    }
+void Subject::notify(int i) {
+    for(auto item:observers)
+        item->update(i);
 }

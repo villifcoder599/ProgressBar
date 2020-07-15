@@ -56,10 +56,24 @@ include CMakeFiles/ProgressBar.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProgressBar.dir/flags.make
 
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp"
+
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" > CMakeFiles\ProgressBar.dir\ProgressBar.cpp.i
+
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.s
+
 CMakeFiles/ProgressBar.dir/main.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/main.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
 CMakeFiles/ProgressBar.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgressBar.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProgressBar.dir/main.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\main.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\main.cpp"
 
 CMakeFiles/ProgressBar.dir/main.cpp.i: cmake_force
@@ -73,7 +87,7 @@ CMakeFiles/ProgressBar.dir/main.cpp.s: cmake_force
 CMakeFiles/ProgressBar.dir/Observer.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/Observer.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
 CMakeFiles/ProgressBar.dir/Observer.cpp.obj: ../Observer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\Observer.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\Observer.cpp"
 
 CMakeFiles/ProgressBar.dir/Observer.cpp.i: cmake_force
@@ -87,7 +101,7 @@ CMakeFiles/ProgressBar.dir/Observer.cpp.s: cmake_force
 CMakeFiles/ProgressBar.dir/Subject.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/Subject.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
 CMakeFiles/ProgressBar.dir/Subject.cpp.obj: ../Subject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ProgressBar.dir/Subject.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProgressBar.dir/Subject.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\Subject.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\Subject.cpp"
 
 CMakeFiles/ProgressBar.dir/Subject.cpp.i: cmake_force
@@ -97,20 +111,6 @@ CMakeFiles/ProgressBar.dir/Subject.cpp.i: cmake_force
 CMakeFiles/ProgressBar.dir/Subject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/Subject.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\Subject.cpp" -o CMakeFiles\ProgressBar.dir\Subject.cpp.s
-
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp"
-
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" > CMakeFiles\ProgressBar.dir\ProgressBar.cpp.i
-
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.s
 
 CMakeFiles/ProgressBar.dir/Loader.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/Loader.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
@@ -128,19 +128,19 @@ CMakeFiles/ProgressBar.dir/Loader.cpp.s: cmake_force
 
 # Object files for target ProgressBar
 ProgressBar_OBJECTS = \
+"CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/main.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/Observer.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/Subject.cpp.obj" \
-"CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/Loader.cpp.obj"
 
 # External object files for target ProgressBar
 ProgressBar_EXTERNAL_OBJECTS =
 
+ProgressBar.exe: CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/main.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/Observer.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/Subject.cpp.obj
-ProgressBar.exe: CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/Loader.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/build.make
 ProgressBar.exe: C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_core.a

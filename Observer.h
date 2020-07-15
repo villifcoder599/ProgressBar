@@ -4,12 +4,12 @@
 
 #ifndef PROGRESSBAR_OBSERVER_H
 #define PROGRESSBAR_OBSERVER_H
-#include "Subject.h"
+
 
 class Observer {
 public:
     ~Observer();
-    void update(Subject s)=0;
+    virtual void update(int value)=0;
 };
 
 

@@ -4,14 +4,28 @@
 
 #ifndef PROGRESSBAR_LOADER_H
 #define PROGRESSBAR_LOADER_H
-#include "Subject.h"
 
-class Loader:Subject {
+#include "Subject.h"
+#include "ProgressBar.h"
+
+#include <wx/wxprec.h>
+#ifndef WX_PRECOMP
+#include <wx/wx.h>
+#endif
+#include <wx/progdlg.h>
+
+class ProgressBar;
+class Loader: public wxApp,public Subject {
+protected:
+    ProgressBar *dialog;
 public:
     Loader(int files);
+    Loader();
     void transferAllFiles();
     int getFiles();
+    void notify(int i);
 protected:
+    //ProgressBar *dialog;
     int files;
 };
 

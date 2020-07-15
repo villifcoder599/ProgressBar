@@ -8,19 +8,15 @@
 #include <list>
 #include "Observer.h"
 
-class Subject {
 
+class Subject {
+    virtual void attach(Observer *obs)=0;
+    virtual void detach(Observer *obs)=0;
+    virtual void notify(int i)=0;
 protected:
     virtual ~Subject()=0;
-public:
-    Subject() {}
-
-    const void attach(Observer *obs);
-    const void detach(Observer *obs);
-    void notify(*Subject s);
-
 protected:
-    std::list<Observer> observers{};
+    std::list<Observer*> observers;
 };
 
 

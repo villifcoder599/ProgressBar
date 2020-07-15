@@ -4,15 +4,34 @@
 
 #include <unistd.h>
 #include <cstdlib>
-#include "Loader.h"
+
+#include "ProgressBar.h"
+
 
 Loader::Loader(int files) {
     this->files=files;
 }
 
 void Loader::transferAllFiles() {
-    for(int i=0;i<files;i++){
-        sleep(600+rand()%400);
-        notify(this);
+    int max=this->getFiles();
+    wxFrame* frame=new wxFrame(NULL,-1,wxString("Carica File"));
+    //this->SetTopWindow(frame);
+    frame->Show(true);
+    dialog=new ProgressBar(wxString("Progress Bar"),wxString("Loading..."),max,frame,wxPD_AUTO_HIDE | wxPD_APP_MODAL|wxPD_REMAINING_TIME,this);
+    for(int i=0;i<max;i++) {
+        wxMilliSleep(5);
+        notify(i);
     }
+}
+
+int Loader::getFiles() {
+    return files;
+}
+
+Loader::Loader():Loader(0) {
+
+}
+
+void Loader::notify(int i) {
+    dialog->update(i);
 }
