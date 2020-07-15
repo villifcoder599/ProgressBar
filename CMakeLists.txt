@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(ProgressBar)
 
 set(CMAKE_CXX_STANDARD 14)
-add_executable(ProgressBar main.cpp Observer.cpp Subject.cpp)
+add_executable(ProgressBar main.cpp Observer.cpp Subject.cpp ProgressBar.cpp ProgressBar.h Loader.cpp Loader.h)
 
 SET(wxWidgets_ROOT_DIR "C:/wxWidgets-3.1.1")
 

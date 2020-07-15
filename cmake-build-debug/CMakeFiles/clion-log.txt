@@ -1,5 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2020.1.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\Francesco Villi\CLionProjects\ProgressBar"
--- Found wxWidgets: C:/wxWidgets-3.1.1/lib/gcc_dll/libwxmsw31u_core.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxbase31u.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxpng.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxtiff.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxjpeg.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxzlib.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxregexu.a;C:/wxWidgets-3.1.1/lib/gcc_dll/libwxexpat.a;winmm;comctl32;uuid;oleacc;uxtheme;rpcrt4;shlwapi;version;wsock32 (found version "3.1.1") found components: core base png tiff jpeg zlib regex expat 
 -- Configuring done
 -- Generating done
 -- Build files have been written to: C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug

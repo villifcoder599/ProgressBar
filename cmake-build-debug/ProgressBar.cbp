@@ -92,10 +92,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Loader.cpp">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Loader.h">
+			<Option target="ProgressBar"/>
+		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.cpp">
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.h">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.cpp">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.h">
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.cpp">

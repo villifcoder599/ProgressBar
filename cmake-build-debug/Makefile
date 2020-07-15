@@ -122,6 +122,33 @@ ProgressBar/fast:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/build
 .PHONY : ProgressBar/fast
 
+Loader.obj: Loader.cpp.obj
+
+.PHONY : Loader.obj
+
+# target to build an object file
+Loader.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.obj
+.PHONY : Loader.cpp.obj
+
+Loader.i: Loader.cpp.i
+
+.PHONY : Loader.i
+
+# target to preprocess a source file
+Loader.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.i
+.PHONY : Loader.cpp.i
+
+Loader.s: Loader.cpp.s
+
+.PHONY : Loader.s
+
+# target to generate assembly for a file
+Loader.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.s
+.PHONY : Loader.cpp.s
+
 Observer.obj: Observer.cpp.obj
 
 .PHONY : Observer.obj
@@ -148,6 +175,33 @@ Observer.s: Observer.cpp.s
 Observer.cpp.s:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.s
 .PHONY : Observer.cpp.s
+
+ProgressBar.obj: ProgressBar.cpp.obj
+
+.PHONY : ProgressBar.obj
+
+# target to build an object file
+ProgressBar.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
+.PHONY : ProgressBar.cpp.obj
+
+ProgressBar.i: ProgressBar.cpp.i
+
+.PHONY : ProgressBar.i
+
+# target to preprocess a source file
+ProgressBar.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i
+.PHONY : ProgressBar.cpp.i
+
+ProgressBar.s: ProgressBar.cpp.s
+
+.PHONY : ProgressBar.s
+
+# target to generate assembly for a file
+ProgressBar.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s
+.PHONY : ProgressBar.cpp.s
 
 Subject.obj: Subject.cpp.obj
 
@@ -212,9 +266,15 @@ help:
 	@echo ... ProgressBar
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Loader.obj
+	@echo ... Loader.i
+	@echo ... Loader.s
 	@echo ... Observer.obj
 	@echo ... Observer.i
 	@echo ... Observer.s
+	@echo ... ProgressBar.obj
+	@echo ... ProgressBar.i
+	@echo ... ProgressBar.s
 	@echo ... Subject.obj
 	@echo ... Subject.i
 	@echo ... Subject.s
