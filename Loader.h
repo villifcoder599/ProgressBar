@@ -19,7 +19,7 @@ class Loader: public wxApp,Subject {
 protected:
     ProgressBar *dialog;
 public:
-    Loader(int files=1);
+    Loader(int files=100);
     bool OnInit();
     int getFiles();
     void notify(int i);
