@@ -1186,7 +1186,3 @@ CMakeFiles/ProgressBar.dir/Subject.cpp.obj: ../Observer.h
 CMakeFiles/ProgressBar.dir/Subject.cpp.obj: ../Subject.cpp
 CMakeFiles/ProgressBar.dir/Subject.cpp.obj: ../Subject.h
 
-CMakeFiles/ProgressBar.dir/main.cpp.obj: ../Observer.h
-CMakeFiles/ProgressBar.dir/main.cpp.obj: ../Subject.h
-CMakeFiles/ProgressBar.dir/main.cpp.obj: ../main.cpp
-

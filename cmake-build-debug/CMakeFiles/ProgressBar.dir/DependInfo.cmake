@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/Subject.cpp.obj"
-  "C:/Users/Francesco Villi/CLionProjects/ProgressBar/main.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

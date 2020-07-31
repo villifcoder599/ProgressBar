@@ -14,8 +14,6 @@ class Subject {
     virtual void detach(Observer *obs)=0;
     virtual void notify(int i)=0;
 protected:
-    virtual ~Subject()=0;
-protected:
     std::list<Observer*> observers;
 };
 

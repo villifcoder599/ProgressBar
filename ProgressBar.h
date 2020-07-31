@@ -21,13 +21,6 @@ public:
                    int maximum = 100,
                    wxWindow *parent = NULL,
                    int style = wxPD_APP_MODAL | wxPD_AUTO_HIDE,Loader *l=NULL);
-    ProgressBar(const wxString& title, const wxString& message,
-                int maximum = 100,
-                wxWindow *parent = NULL,
-                int style = wxPD_APP_MODAL | wxPD_AUTO_HIDE);
-
-    bool OnInit();
-    int OnExit();
     void update(int value);
 protected:
     Loader *loader;

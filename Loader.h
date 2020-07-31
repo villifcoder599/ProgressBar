@@ -15,19 +15,21 @@
 #include <wx/progdlg.h>
 
 class ProgressBar;
-class Loader: public wxApp,public Subject {
+class Loader: public wxApp,Subject {
 protected:
     ProgressBar *dialog;
 public:
-    Loader(int files);
-    Loader();
-    void transferAllFiles();
+    Loader(int files=1);
+    bool OnInit();
     int getFiles();
     void notify(int i);
+    void attach(Observer *obs);
+    void detach(Observer *obs);
 protected:
     //ProgressBar *dialog;
     int files;
 };
+
 
 
 #endif //PROGRESSBAR_LOADER_H
