@@ -1,1 +1,1 @@
--isystem C:/wxWidgets-3.1.1/lib/gcc_dll/mswu -isystem C:/wxWidgets-3.1.1/include 
+-isystem C:/wxWidgets-3.1.4/lib/gcc_lib/mswud -isystem C:/wxWidgets-3.1.4/include 

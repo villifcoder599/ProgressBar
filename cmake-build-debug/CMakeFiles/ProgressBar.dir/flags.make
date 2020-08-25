@@ -4,7 +4,7 @@
 # compile CXX with C:/MinGW/bin/g++.exe
 CXX_FLAGS = -g   -std=gnu++14
 
-CXX_DEFINES = -DUNICODE -DWXUSINGDLL -D_UNICODE
+CXX_DEFINES = -DUNICODE -D_UNICODE
 
 CXX_INCLUDES = @CMakeFiles/ProgressBar.dir/includes_CXX.rsp
 

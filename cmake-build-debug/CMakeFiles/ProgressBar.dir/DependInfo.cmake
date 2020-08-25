@@ -14,14 +14,13 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "UNICODE"
-  "WXUSINGDLL"
   "_UNICODE"
   )
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "C:/wxWidgets-3.1.1/lib/gcc_dll/mswu"
-  "C:/wxWidgets-3.1.1/include"
+  "C:/wxWidgets-3.1.4/lib/gcc_lib/mswud"
+  "C:/wxWidgets-3.1.4/include"
   )
 
 # Targets to which this target links.
