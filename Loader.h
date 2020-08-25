@@ -7,7 +7,7 @@
 
 #include "Subject.h"
 #include "ProgressBar.h"
-
+#include <dirent.h>
 #include <wx/wxprec.h>
 #ifndef WX_PRECOMP
 #include <wx/wx.h>
@@ -16,18 +16,21 @@
 
 class ProgressBar;
 class Loader: public wxApp,Subject {
-protected:
-    ProgressBar *dialog;
+;
 public:
-    Loader(int files=100);
+    Loader(std::string path);
+    Loader();
     bool OnInit();
-    int getFiles();
+    int getNumFiles();
     void notify(int i);
     void attach(Observer *obs);
     void detach(Observer *obs);
 protected:
-    //ProgressBar *dialog;
-    int files;
+    ProgressBar *dialog;
+    DIR *dir;
+    struct dirent *ent;
+    std::string path;
+    void LoadFiles();
 };
 
 
