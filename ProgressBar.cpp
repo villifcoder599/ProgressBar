@@ -12,7 +12,7 @@
 
 
 ProgressBar::ProgressBar(const wxString &title, const wxString &message, int maximum, wxWindow *parent, int style,
-                         Loader *l): wxProgressDialog(title, message, maximum, parent, style),loader(l) {}
+                         LoaderWxApp *l): wxProgressDialog(title, message, maximum, parent, style), loader(l) {}
 
 void ProgressBar::update(int value) {
     this->Update(value);

@@ -88,10 +88,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Loader.cpp">
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxApp.cpp">
 			<Option target="ProgressBar"/>
 		</Unit>
-		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Loader.h">
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxApp.h">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.cpp">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.h">
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.cpp">

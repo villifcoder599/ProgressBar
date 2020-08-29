@@ -4,7 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Francesco Villi/CLionProjects/ProgressBar/Loader.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/Loader.cpp.obj"
+  "C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxApp.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj"
+  "C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj"
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
   "C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.cpp" "C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/CMakeFiles/ProgressBar.dir/Subject.cpp.obj"

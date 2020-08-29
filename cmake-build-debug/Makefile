@@ -122,32 +122,59 @@ ProgressBar/fast:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/build
 .PHONY : ProgressBar/fast
 
-Loader.obj: Loader.cpp.obj
+LoaderWxApp.obj: LoaderWxApp.cpp.obj
 
-.PHONY : Loader.obj
+.PHONY : LoaderWxApp.obj
 
 # target to build an object file
-Loader.cpp.obj:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.obj
-.PHONY : Loader.cpp.obj
+LoaderWxApp.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj
+.PHONY : LoaderWxApp.cpp.obj
 
-Loader.i: Loader.cpp.i
+LoaderWxApp.i: LoaderWxApp.cpp.i
 
-.PHONY : Loader.i
+.PHONY : LoaderWxApp.i
 
 # target to preprocess a source file
-Loader.cpp.i:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.i
-.PHONY : Loader.cpp.i
+LoaderWxApp.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.i
+.PHONY : LoaderWxApp.cpp.i
 
-Loader.s: Loader.cpp.s
+LoaderWxApp.s: LoaderWxApp.cpp.s
 
-.PHONY : Loader.s
+.PHONY : LoaderWxApp.s
 
 # target to generate assembly for a file
-Loader.cpp.s:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Loader.cpp.s
-.PHONY : Loader.cpp.s
+LoaderWxApp.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.s
+.PHONY : LoaderWxApp.cpp.s
+
+LoaderWxMain.obj: LoaderWxMain.cpp.obj
+
+.PHONY : LoaderWxMain.obj
+
+# target to build an object file
+LoaderWxMain.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj
+.PHONY : LoaderWxMain.cpp.obj
+
+LoaderWxMain.i: LoaderWxMain.cpp.i
+
+.PHONY : LoaderWxMain.i
+
+# target to preprocess a source file
+LoaderWxMain.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.i
+.PHONY : LoaderWxMain.cpp.i
+
+LoaderWxMain.s: LoaderWxMain.cpp.s
+
+.PHONY : LoaderWxMain.s
+
+# target to generate assembly for a file
+LoaderWxMain.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.s
+.PHONY : LoaderWxMain.cpp.s
 
 Observer.obj: Observer.cpp.obj
 
@@ -239,9 +266,12 @@ help:
 	@echo ... ProgressBar
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Loader.obj
-	@echo ... Loader.i
-	@echo ... Loader.s
+	@echo ... LoaderWxApp.obj
+	@echo ... LoaderWxApp.i
+	@echo ... LoaderWxApp.s
+	@echo ... LoaderWxMain.obj
+	@echo ... LoaderWxMain.i
+	@echo ... LoaderWxMain.s
 	@echo ... Observer.obj
 	@echo ... Observer.i
 	@echo ... Observer.s
