@@ -17,3 +17,7 @@ ProgressBar::ProgressBar(wxWindow *parent, wxWindowID id, int range, const wxPoi
 void ProgressBar::update(int value) {
     this->SetValue(value);
 }
+
+ProgressBar::~ProgressBar() {
+
+}
