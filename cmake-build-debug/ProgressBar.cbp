@@ -100,7 +100,10 @@
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.h">
 			<Option target="ProgressBar"/>
 		</Unit>
-		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.cpp">
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.cpp">
+			<Option target="ProgressBar"/>
+		</Unit>
+		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h">
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.h">
@@ -110,9 +113,6 @@
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.h">
-			<Option target="ProgressBar"/>
-		</Unit>
-		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.cpp">
 			<Option target="ProgressBar"/>
 		</Unit>
 		<Unit filename="C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.h">

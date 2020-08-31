@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj"
   "CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj"
-  "CMakeFiles/ProgressBar.dir/Observer.cpp.obj"
+  "CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj"
   "CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
-  "CMakeFiles/ProgressBar.dir/Subject.cpp.obj"
   "ProgressBar.exe"
   "ProgressBar.exe.manifest"
   "ProgressBar.pdb"

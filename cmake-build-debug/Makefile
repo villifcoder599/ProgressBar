@@ -176,32 +176,32 @@ LoaderWxMain.cpp.s:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.s
 .PHONY : LoaderWxMain.cpp.s
 
-Observer.obj: Observer.cpp.obj
+ManagerFile.obj: ManagerFile.cpp.obj
 
-.PHONY : Observer.obj
+.PHONY : ManagerFile.obj
 
 # target to build an object file
-Observer.cpp.obj:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.obj
-.PHONY : Observer.cpp.obj
+ManagerFile.cpp.obj:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj
+.PHONY : ManagerFile.cpp.obj
 
-Observer.i: Observer.cpp.i
+ManagerFile.i: ManagerFile.cpp.i
 
-.PHONY : Observer.i
+.PHONY : ManagerFile.i
 
 # target to preprocess a source file
-Observer.cpp.i:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.i
-.PHONY : Observer.cpp.i
+ManagerFile.cpp.i:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.i
+.PHONY : ManagerFile.cpp.i
 
-Observer.s: Observer.cpp.s
+ManagerFile.s: ManagerFile.cpp.s
 
-.PHONY : Observer.s
+.PHONY : ManagerFile.s
 
 # target to generate assembly for a file
-Observer.cpp.s:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Observer.cpp.s
-.PHONY : Observer.cpp.s
+ManagerFile.cpp.s:
+	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.s
+.PHONY : ManagerFile.cpp.s
 
 ProgressBar.obj: ProgressBar.cpp.obj
 
@@ -230,33 +230,6 @@ ProgressBar.cpp.s:
 	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s
 .PHONY : ProgressBar.cpp.s
 
-Subject.obj: Subject.cpp.obj
-
-.PHONY : Subject.obj
-
-# target to build an object file
-Subject.cpp.obj:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.obj
-.PHONY : Subject.cpp.obj
-
-Subject.i: Subject.cpp.i
-
-.PHONY : Subject.i
-
-# target to preprocess a source file
-Subject.cpp.i:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.i
-.PHONY : Subject.cpp.i
-
-Subject.s: Subject.cpp.s
-
-.PHONY : Subject.s
-
-# target to generate assembly for a file
-Subject.cpp.s:
-	$(MAKE) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/Subject.cpp.s
-.PHONY : Subject.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -272,15 +245,12 @@ help:
 	@echo ... LoaderWxMain.obj
 	@echo ... LoaderWxMain.i
 	@echo ... LoaderWxMain.s
-	@echo ... Observer.obj
-	@echo ... Observer.i
-	@echo ... Observer.s
+	@echo ... ManagerFile.obj
+	@echo ... ManagerFile.i
+	@echo ... ManagerFile.s
 	@echo ... ProgressBar.obj
 	@echo ... ProgressBar.i
 	@echo ... ProgressBar.s
-	@echo ... Subject.obj
-	@echo ... Subject.i
-	@echo ... Subject.s
 .PHONY : help
 
 
