@@ -10,11 +10,10 @@
 #endif
 #include <wx/progdlg.h>
 
-
-ProgressBar::ProgressBar(const wxString &title, const wxString &message, int maximum, wxWindow *parent, int style,
-                         LoaderWxApp *l): wxProgressDialog(title, message, maximum, parent, style), loader(l) {}
-
-void ProgressBar::update(int value) {
-    this->Update(value);
+ProgressBar::ProgressBar(wxWindow *parent, wxWindowID id, int range, const wxPoint &pos, const wxSize &size,
+                         long style):wxGauge(parent,id,range,pos,size,style) {
 }
 
+void ProgressBar::update(int value) {
+    this->SetValue(value);
+}

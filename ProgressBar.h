@@ -10,20 +10,22 @@
 #include <wx/progdlg.h>
 #include "Observer.h"
 #include "LoaderWxApp.h"
+#include "Subject.h"
 
 
 #endif
 
-class ProgressBar :public wxProgressDialog, Observer {
+class ProgressBar :public wxGauge, public Observer {
 
 public:
-    ProgressBar(const wxString& title, const wxString& message,
-                int maximum = 100,
-                wxWindow *parent = NULL,
-                int style = wxPD_APP_MODAL | wxPD_AUTO_HIDE, LoaderWxApp *l=NULL);
-    void update(int value);
-protected:
-    LoaderWxApp *loader;
+    ProgressBar(wxWindow *parent,
+                wxWindowID id,
+                int range,
+                const wxPoint& pos = wxDefaultPosition,
+                const wxSize& size = wxDefaultSize,
+                long style = wxGA_HORIZONTAL);
+
+    void update(int value) override;
 };
 
 
