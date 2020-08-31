@@ -5,6 +5,8 @@
 #ifndef PROGRESSBAR_LOADERWXMAIN_H
 #define PROGRESSBAR_LOADERWXMAIN_H
 #include "LoaderWxApp.h"
+#include "ManagerFile.h"
+#include "ProgressBar.h"
 
 class LoaderWxMain: public wxFrame {
 public:
@@ -18,9 +20,10 @@ private:
     wxStaticText *m_Label_Button_ChooseFiles;
     const wxColour *m_background_color;
     wxArrayString paths;
-    wxGauge *progressBar;
+    ProgressBar *progressBar;
     wxListBox *listBox;
     wxTextCtrl *label_path;
+    ManagerFile *dirDialog;
 
     void onClickChooseFiles(wxCommandEvent &event);
     void onClose(wxCloseEvent &event);
