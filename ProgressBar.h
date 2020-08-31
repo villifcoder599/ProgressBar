@@ -24,8 +24,8 @@ public:
                 const wxPoint& pos = wxDefaultPosition,
                 const wxSize& size = wxDefaultSize,
                 long style = wxGA_HORIZONTAL);
-
     void update(int value) override;
+    ~ProgressBar();
 };
 
 
