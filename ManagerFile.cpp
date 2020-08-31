@@ -24,6 +24,7 @@ void ManagerFile::LoadFile() {
             }
             wxMessageBox(("Complete!"),"Message");
             app->SetRange(0);
+            delete app;
         }
     }
 
