@@ -19,7 +19,6 @@ private:
     wxPanel *panel;
     wxStaticText *m_Label_Button_ChooseFiles;
     const wxColour *m_background_color;
-    wxArrayString paths;
     ProgressBar *progressBar;
     wxListBox *listBox;
     wxTextCtrl *label_path;
