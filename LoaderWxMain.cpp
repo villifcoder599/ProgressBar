@@ -56,7 +56,7 @@ LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,
     m_background_color=new wxColour(255,255,255);
     listBox=new wxListBox(panel,wxID_ANY,wxDefaultPosition,wxDefaultSize,0,NULL,wxLB_NEEDED_SB);
     dirDialog=new ManagerFile(this,"Select files",wxFD_DEFAULT_STYLE|wxFD_MULTIPLE);
-    progressBar=new ProgressBar(panel,wxID_ANY,0,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
+    progressBar=new ProgressBar(panel,wxID_ANY,0,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL,dirDialog);
 
     m_MainBox->Add(hbox_pathFile, 0, wxALL | wxGROW, 10);
     m_MainBox->Add(hbox_listBox, 1, wxALL | wxGROW, 10);
@@ -100,7 +100,7 @@ void LoaderWxMain::onQuit(wxCommandEvent &event){
 void LoaderWxMain::onAbout(wxCommandEvent &event)
 {
     wxString msg = wxbuildinfo(long_f);
-    wxMessageBox(msg, ("Welcome to..."));
+    wxMessageBox(msg, ("Welcome"));
 }
 
 
@@ -112,12 +112,18 @@ void LoaderWxMain::onClickChooseFiles(wxCommandEvent &event) {
             for(auto item:dirDialog->getPaths()){
                 listBox->Append(item.substr(item.find_last_of("\\")+1));
             }
+
         }
     }
 }
 
 void LoaderWxMain::onClickLoad(wxCommandEvent &event) {
-    dirDialog->LoadFile();
-    listBox->Clear();
-    label_path->Clear();
+    if(!listBox->IsEmpty()) {
+        dirDialog->LoadFile();
+        listBox->Clear();
+        label_path->Clear();
+    }
+    else{
+        wxMessageBox("Devi prima scegliere i file!","Alert");
+    }
 }
