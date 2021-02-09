@@ -11,7 +11,8 @@
 #include <wx/progdlg.h>
 
 ProgressBar::ProgressBar(wxWindow *parent, wxWindowID id, int range, const wxPoint &pos, const wxSize &size,
-                         long style):wxGauge(parent,id,range,pos,size,style) {
+                         long style,Subject *managerFile):wxGauge(parent,id,range,pos,size,style) {
+    this->managerFile=managerFile;
 }
 
 void ProgressBar::update(int value) {
@@ -19,5 +20,7 @@ void ProgressBar::update(int value) {
 }
 
 ProgressBar::~ProgressBar() {
-
+    if (this->managerFile != nullptr)
+        this->managerFile->detach(this);
 }
+

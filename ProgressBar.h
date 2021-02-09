@@ -16,15 +16,18 @@
 #endif
 
 class ProgressBar :public wxGauge, public Observer {
-
+private:
+    Subject *managerFile;
 public:
     ProgressBar(wxWindow *parent,
                 wxWindowID id,
                 int range,
                 const wxPoint& pos = wxDefaultPosition,
                 const wxSize& size = wxDefaultSize,
-                long style = wxGA_HORIZONTAL);
+                long style = wxGA_HORIZONTAL,
+                Subject *managerFile= nullptr);
     void update(int value) override;
+
     ~ProgressBar();
 };
 
