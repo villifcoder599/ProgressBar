@@ -19,13 +19,14 @@ class ProgressBar :public wxGauge, public Observer {
 private:
     Subject *managerFile;
 public:
-    ProgressBar(wxWindow *parent,
+    ProgressBar(Subject* managerFile,
+                wxWindow *parent,
                 wxWindowID id,
                 int range,
                 const wxPoint& pos = wxDefaultPosition,
                 const wxSize& size = wxDefaultSize,
-                long style = wxGA_HORIZONTAL,
-                Subject *managerFile= nullptr);
+                long style = wxGA_HORIZONTAL
+                );
     void update(int value) override;
 
     ~ProgressBar();

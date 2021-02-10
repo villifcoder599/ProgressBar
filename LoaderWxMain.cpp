@@ -56,7 +56,7 @@ LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,
     m_background_color=new wxColour(255,255,255);
     listBox=new wxListBox(panel,wxID_ANY,wxDefaultPosition,wxDefaultSize,0,NULL,wxLB_NEEDED_SB);
     dirDialog=new ManagerFile(this,"Select files",wxFD_DEFAULT_STYLE|wxFD_MULTIPLE);
-    progressBar=new ProgressBar(panel,wxID_ANY,0,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL,dirDialog);
+    progressBar=new ProgressBar(dirDialog,panel,wxID_ANY,0,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
 
     m_MainBox->Add(hbox_pathFile, 0, wxALL | wxGROW, 10);
     m_MainBox->Add(hbox_listBox, 1, wxALL | wxGROW, 10);
@@ -71,7 +71,6 @@ LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,
     hbox_pathFile->Add(m_Label_Button_ChooseFiles, 0, wxCENTER);
     hbox_pathFile->Add(10, -1, 0, wxRIGHT | wxLEFT);
     hbox_pathFile->Add(label_path, 1);
-    dirDialog->attach(progressBar);
     label_path->SetCursor(*wxSTANDARD_CURSOR);
     menu->Append(idMenuQuit,("&Quit\tAlt-F4"),("Quit the app"));
     helpMenu->Append(idMenuAbout,("&About\tF1"),("Show info about this app"));

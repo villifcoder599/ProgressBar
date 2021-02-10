@@ -10,9 +10,11 @@
 #endif
 #include <wx/progdlg.h>
 
-ProgressBar::ProgressBar(wxWindow *parent, wxWindowID id, int range, const wxPoint &pos, const wxSize &size,
-                         long style,Subject *managerFile):wxGauge(parent,id,range,pos,size,style) {
-    this->managerFile=managerFile;
+ProgressBar::ProgressBar(Subject *managerFile,wxWindow *parent, wxWindowID id, int range, const wxPoint &pos, const wxSize &size,
+                         long style):wxGauge(parent,id,range,pos,size,style),managerFile(managerFile) {
+    if(this->managerFile!=nullptr) {
+        this->managerFile->attach(this);
+    }
 }
 
 void ProgressBar::update(int value) {
