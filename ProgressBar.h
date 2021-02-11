@@ -5,21 +5,20 @@
 #ifndef PROGRESSBAR_PROGRESSBAR_H
 #define PROGRESSBAR_PROGRESSBAR_H
 #include <wx/wxprec.h>
+#include "ManagerFile.h"
 #ifndef WX_PRECOMP
     #include <wx/wx.h>
 #include <wx/progdlg.h>
 #include "Observer.h"
 #include "LoaderWxApp.h"
 #include "Subject.h"
-
-
 #endif
 
 class ProgressBar :public wxGauge, public Observer {
 private:
-    Subject *managerFile;
+    ManagerFile *managerFile;
 public:
-    ProgressBar(Subject* managerFile,
+    ProgressBar(ManagerFile* managerFile,
                 wxWindow *parent,
                 wxWindowID id,
                 int range,
@@ -27,9 +26,8 @@ public:
                 const wxSize& size = wxDefaultSize,
                 long style = wxGA_HORIZONTAL
                 );
-    void update(int value) override;
-
-    ~ProgressBar();
+    void update() override;
+    ~ProgressBar() override;
 };
 
 

@@ -19,13 +19,16 @@ public:
                 const wxString& message = wxASCII_STR(wxFileSelectorPromptStr),
                 long style = wxFD_DEFAULT_STYLE);
     void LoadFile();
-    wxArrayString getPaths();
-    void attach(Observer *obs);
-    void detach(Observer *obs);
-    void notify(int i);
+    wxArrayString getAllPaths();
+    int getLoadPaths();
+    void addPath(wxString path);
+    void attach(Observer *obs) override;
+    void detach(Observer *obs) override;
+    void notify() override;
     ~ManagerFile();
 private:
     wxArrayString paths;
+    int loadPaths=0;
 };
 
 
