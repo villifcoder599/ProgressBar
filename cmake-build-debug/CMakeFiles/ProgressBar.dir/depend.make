@@ -1771,6 +1771,7 @@ CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj: C:/wxWidgets-3.1.4/include/wx/xt
 CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj: C:/wxWidgets-3.1.4/lib/gcc_lib/mswud/wx/setup.h
 
 CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../LoaderWxApp.h
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ManagerFile.h
 CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../Observer.h
 CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.cpp
 CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.h

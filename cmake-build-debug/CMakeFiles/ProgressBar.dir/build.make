@@ -155,6 +155,7 @@ ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxjpegd.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxzlibd.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxregexud.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxexpatd.a
+ProgressBar.exe: lib/libgtestd.a
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/linklibs.rsp
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/objects1.rsp
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/link.txt
