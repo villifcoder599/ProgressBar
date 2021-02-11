@@ -1,34 +1,7 @@
 //
 // Created by Francesco Villi on 29/08/2020.
 //
-
 #include "LoaderWxMain.h"
-
-enum wxbuildinfoformat {
-    short_f, long_f };
-wxString wxbuildinfo(wxbuildinfoformat format)
-{
-    wxString wxbuild(wxVERSION_STRING);
-
-    if (format == long_f )
-    {
-#if defined(__WXMSW__)
-        wxbuild << _T("-Windows");
-#elif defined(__WXMAC__)
-        wxbuild << _T("-Mac");
-#elif defined(__UNIX__)
-        wxbuild << _T("-Linux");
-#endif
-
-#if wxUSE_UNICODE
-        wxbuild << _T("-Unicode build");
-#else
-        wxbuild << _T("-ANSI build");
-#endif // wxUSE_UNICODE
-    }
-
-    return wxbuild;
-}
 
 BEGIN_EVENT_TABLE(LoaderWxMain,wxFrame)
                 EVT_CLOSE(LoaderWxMain::onClose)
@@ -78,11 +51,10 @@ LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,
     menubar->Append(helpMenu,"&Help");
     panel->SetSizer(m_MainBox);
     this->SetSizeHints(wxDefaultSize,wxDefaultSize);
-    CreateStatusBar(2);
-    SetBackgroundColour(*m_background_color);
-    SetMenuBar(menubar);
-    SetStatusText("Status bar");
-    SetStatusText(wxbuildinfo(short_f),1);
+    this->CreateStatusBar(2);
+    this->SetBackgroundColour(*m_background_color);
+    this->SetMenuBar(menubar);
+    this->SetStatusText("Status bar");
 }
 LoaderWxMain::~LoaderWxMain(){
 
@@ -98,17 +70,16 @@ void LoaderWxMain::onQuit(wxCommandEvent &event){
 
 void LoaderWxMain::onAbout(wxCommandEvent &event)
 {
-    wxString msg = wxbuildinfo(long_f);
-    wxMessageBox(msg, ("Welcome"));
+    wxMessageBox(("Simulazione caricamento file"));
 }
 
 
 void LoaderWxMain::onClickChooseFiles(wxCommandEvent &event) {
     listBox->Clear();
     if(dirDialog->ShowModal()==wxID_OK){
-        label_path->SetLabel((dirDialog->getPaths())[0].substr(0,(dirDialog->getPaths())[0].find_last_of("\\")+1));
-        if(!((dirDialog->getPaths()).IsEmpty())) {
-            for(auto item:dirDialog->getPaths()){
+        label_path->SetLabel((dirDialog->getAllPaths())[0].substr(0,(dirDialog->getAllPaths())[0].find_last_of("\\")+1));
+        if(!((dirDialog->getAllPaths()).IsEmpty())) {
+            for(auto item:dirDialog->getAllPaths()){
                 listBox->Append(item.substr(item.find_last_of("\\")+1));
             }
 

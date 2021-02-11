@@ -30,10 +30,6 @@ private:
     void onClickLoad(wxCommandEvent &event);
     void onAbout(wxCommandEvent &event);
 
-public:
-    const wxArrayString &getPaths() const;
-    wxListBox *getListBox() const;
-    void setPaths(const wxArrayString &paths);
 
 DECLARE_EVENT_TABLE();
     enum{

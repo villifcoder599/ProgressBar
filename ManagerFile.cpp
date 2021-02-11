@@ -1,46 +1,43 @@
 //
 // Created by Francesco Villi on 30/08/2020.
 //
-
 #include "ManagerFile.h"
 #include "ProgressBar.h"
-
+#include <stdio.h>
+#include <iostream>
 ManagerFile::ManagerFile(wxWindow *parent, const wxString &message, long style):wxFileDialog(parent,message,"","","",style) {
 
 }
 
 void ManagerFile::LoadFile() {
-    this->GetPaths(paths);
-    int count=paths.GetCount();
-    for(auto item:observers) {
-        if (auto *app = dynamic_cast<ProgressBar *>(item)) {
-            app->SetRange(count);
-            count = 0;
-            for (auto elem:paths) {
-                //..loading...
-                wxSleep(1);
-                count++;
-                notify(count);
+    addPath("cartella/test.txt");
+    std::cout << paths.GetCount();
+    int errori=0;
+    for(int i=0;i<paths.GetCount();i++) {
+        try {
+            FILE *pfile = fopen(paths[i], "r");
+            wxSleep(1);
+            if(pfile==nullptr) {
+                errori++;
+                throw std::exception();
             }
-            wxMessageBox(("Complete!"),"Message");
-            app->SetRange(0);
-        }
+        } catch (std::exception& e) { }
+        loadPaths++;
+        notify();
     }
-
+    if(errori>0)
+        wxMessageBox("Sono stati trovati "+ std::to_string(errori) + " file non validi","alert");
 }
 
-wxArrayString ManagerFile::getPaths() {
-    this->GetPaths(paths);
-    return paths;
+wxArrayString ManagerFile::getAllPaths() {
+    GetPaths(paths);
+    return this->paths;
 }
 
-ManagerFile::~ManagerFile() {
 
-}
-
-void ManagerFile::notify(int i) {
+void ManagerFile::notify() {
     for(auto item:observers)
-        item->update(i);
+        item->update();
 }
 
 void ManagerFile::detach(Observer *obs) {
@@ -51,4 +48,16 @@ void ManagerFile::detach(Observer *obs) {
 void ManagerFile::attach(Observer *obs) {
     if(obs!= nullptr)
         observers.push_back(obs);
+}
+
+ManagerFile::~ManagerFile() {
+
+}
+
+void ManagerFile::addPath(const wxString path) {
+    paths.Insert(path,0);
+}
+
+int ManagerFile::getLoadPaths() {
+    return loadPaths;
 }
