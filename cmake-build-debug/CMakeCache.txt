@@ -480,13 +480,13 @@ WX_zlib:FILEPATH=WX_zlib-NOTFOUND
 WX_zlibd:FILEPATH=C:/wxWidgets-3.1.4/lib/gcc_lib/libwxzlibd.a
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/lib/googletest-master/googlemock
+gmock_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/test/lib/googletest/googlemock
 
 //Dependencies for the target
 gmock_LIB_DEPENDS:STATIC=general;gtest;
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/lib/googletest-master/googlemock
+gmock_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/test/lib/googletest/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
@@ -495,10 +495,10 @@ gmock_build_tests:BOOL=OFF
 gmock_main_LIB_DEPENDS:STATIC=general;gmock;
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/lib/googletest-master
+googletest-distribution_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/test/lib/googletest
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/lib/googletest-master
+googletest-distribution_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/test/lib/googletest
 
 //Value Computed by CMake
 googletest-master_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/lib
@@ -507,10 +507,10 @@ googletest-master_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/Progr
 googletest-master_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/lib
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/lib/googletest-master/googletest
+gtest_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/test/lib/googletest/googletest
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/lib/googletest-master/googletest
+gtest_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/test/lib/googletest/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -530,6 +530,12 @@ gtest_hide_internal_symbols:BOOL=OFF
 
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;gtest;
+
+//Value Computed by CMake
+test_BINARY_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/test
+
+//Value Computed by CMake
+test_SOURCE_DIR:STATIC=C:/Users/Francesco Villi/CLionProjects/ProgressBar/test
 
 //Set wxWidgets configuration (mswud)
 wxWidgets_CONFIGURATION:STRING=mswud
@@ -688,7 +694,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -863,7 +869,7 @@ _Python_EXECUTABLE:INTERNAL=C:/ProgramData/Anaconda3/python.exe
 //Python Properties
 _Python_INTERPRETER_PROPERTIES:INTERNAL=Python;3;8;5;32;;cp38-win_amd64;C:\ProgramData\Anaconda3\Lib;C:\ProgramData\Anaconda3\Lib;C:\ProgramData\Anaconda3\Lib\site-packages;C:\ProgramData\Anaconda3\Lib\site-packages
 _Python_INTERPRETER_SIGNATURE:INTERNAL=117a2bed30ff1a75172c5dc805aff187
-generated_dir:INTERNAL=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/lib/googletest-master/googletest/generated
+generated_dir:INTERNAL=C:/Users/Francesco Villi/CLionProjects/ProgressBar/cmake-build-debug/test/lib/googletest/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

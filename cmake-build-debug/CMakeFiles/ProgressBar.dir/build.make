@@ -76,24 +76,10 @@ include CMakeFiles/ProgressBar.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ProgressBar.dir/flags.make
 
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp"
-
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" > CMakeFiles\ProgressBar.dir\ProgressBar.cpp.i
-
-CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.s
-
 CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
 CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj: ../LoaderWxApp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj"
 	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\LoaderWxApp.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\LoaderWxApp.cpp"
 
 CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.i: cmake_force
@@ -103,6 +89,20 @@ CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.i: cmake_force
 CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\LoaderWxApp.cpp" -o CMakeFiles\ProgressBar.dir\LoaderWxApp.cpp.s
+
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj: ../ProgressBar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.obj -c "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp"
+
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" > CMakeFiles\ProgressBar.dir\ProgressBar.cpp.i
+
+CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\Francesco Villi\CLionProjects\ProgressBar\ProgressBar.cpp" -o CMakeFiles\ProgressBar.dir\ProgressBar.cpp.s
 
 CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj: CMakeFiles/ProgressBar.dir/flags.make
 CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj: CMakeFiles/ProgressBar.dir/includes_CXX.rsp
@@ -134,16 +134,16 @@ CMakeFiles/ProgressBar.dir/ManagerFile.cpp.s: cmake_force
 
 # Object files for target ProgressBar
 ProgressBar_OBJECTS = \
-"CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj" \
+"CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj" \
 "CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj"
 
 # External object files for target ProgressBar
 ProgressBar_EXTERNAL_OBJECTS =
 
-ProgressBar.exe: CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj
+ProgressBar.exe: CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/build.make
@@ -155,7 +155,7 @@ ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxjpegd.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxzlibd.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxregexud.a
 ProgressBar.exe: C:/wxWidgets-3.1.4/lib/gcc_lib/libwxexpatd.a
-ProgressBar.exe: lib/libgtestd.a
+ProgressBar.exe: libcore.a
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/linklibs.rsp
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/objects1.rsp
 ProgressBar.exe: CMakeFiles/ProgressBar.dir/link.txt

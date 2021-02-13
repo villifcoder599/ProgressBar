@@ -75,6 +75,16 @@ CMAKE_BINARY_DIR = "C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-bui
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -120,16 +130,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
@@ -189,6 +189,32 @@ ProgressBar/fast:
 .PHONY : ProgressBar/fast
 
 #=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
+# Target rules for targets named test
+
+# Build rule for target.
+test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test
+.PHONY : test
+
+# fast build rule for target.
+test/fast:
+	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\test.dir\build.make test/CMakeFiles/test.dir/build
+.PHONY : test/fast
+
+#=============================================================================
 # Target rules for targets named gmock_main
 
 # Build rule for target.
@@ -198,7 +224,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f lib\googletest-master\googlemock\CMakeFiles\gmock_main.dir\build.make lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock_main.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -211,7 +237,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f lib\googletest-master\googlemock\CMakeFiles\gmock.dir\build.make lib/googletest-master/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googlemock\CMakeFiles\gmock.dir\build.make test/lib/googletest/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -224,7 +250,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f lib\googletest-master\googletest\CMakeFiles\gtest.dir\build.make lib/googletest-master/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -237,7 +263,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f lib\googletest-master\googletest\CMakeFiles\gtest_main.dir\build.make lib/googletest-master/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f test\lib\googletest\googletest\CMakeFiles\gtest_main.dir\build.make test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 LoaderWxApp.obj: LoaderWxApp.cpp.obj
@@ -247,6 +273,7 @@ LoaderWxApp.obj: LoaderWxApp.cpp.obj
 # target to build an object file
 LoaderWxApp.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxApp.cpp.obj
 .PHONY : LoaderWxApp.cpp.obj
 
 LoaderWxApp.i: LoaderWxApp.cpp.i
@@ -256,6 +283,7 @@ LoaderWxApp.i: LoaderWxApp.cpp.i
 # target to preprocess a source file
 LoaderWxApp.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxApp.cpp.i
 .PHONY : LoaderWxApp.cpp.i
 
 LoaderWxApp.s: LoaderWxApp.cpp.s
@@ -265,6 +293,7 @@ LoaderWxApp.s: LoaderWxApp.cpp.s
 # target to generate assembly for a file
 LoaderWxApp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxApp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxApp.cpp.s
 .PHONY : LoaderWxApp.cpp.s
 
 LoaderWxMain.obj: LoaderWxMain.cpp.obj
@@ -274,6 +303,7 @@ LoaderWxMain.obj: LoaderWxMain.cpp.obj
 # target to build an object file
 LoaderWxMain.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxMain.cpp.obj
 .PHONY : LoaderWxMain.cpp.obj
 
 LoaderWxMain.i: LoaderWxMain.cpp.i
@@ -283,6 +313,7 @@ LoaderWxMain.i: LoaderWxMain.cpp.i
 # target to preprocess a source file
 LoaderWxMain.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxMain.cpp.i
 .PHONY : LoaderWxMain.cpp.i
 
 LoaderWxMain.s: LoaderWxMain.cpp.s
@@ -292,6 +323,7 @@ LoaderWxMain.s: LoaderWxMain.cpp.s
 # target to generate assembly for a file
 LoaderWxMain.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/LoaderWxMain.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/LoaderWxMain.cpp.s
 .PHONY : LoaderWxMain.cpp.s
 
 ManagerFile.obj: ManagerFile.cpp.obj
@@ -301,6 +333,7 @@ ManagerFile.obj: ManagerFile.cpp.obj
 # target to build an object file
 ManagerFile.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ManagerFile.cpp.obj
 .PHONY : ManagerFile.cpp.obj
 
 ManagerFile.i: ManagerFile.cpp.i
@@ -310,6 +343,7 @@ ManagerFile.i: ManagerFile.cpp.i
 # target to preprocess a source file
 ManagerFile.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ManagerFile.cpp.i
 .PHONY : ManagerFile.cpp.i
 
 ManagerFile.s: ManagerFile.cpp.s
@@ -319,6 +353,7 @@ ManagerFile.s: ManagerFile.cpp.s
 # target to generate assembly for a file
 ManagerFile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ManagerFile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ManagerFile.cpp.s
 .PHONY : ManagerFile.cpp.s
 
 ProgressBar.obj: ProgressBar.cpp.obj
@@ -328,6 +363,7 @@ ProgressBar.obj: ProgressBar.cpp.obj
 # target to build an object file
 ProgressBar.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ProgressBar.cpp.obj
 .PHONY : ProgressBar.cpp.obj
 
 ProgressBar.i: ProgressBar.cpp.i
@@ -337,6 +373,7 @@ ProgressBar.i: ProgressBar.cpp.i
 # target to preprocess a source file
 ProgressBar.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ProgressBar.cpp.i
 .PHONY : ProgressBar.cpp.i
 
 ProgressBar.s: ProgressBar.cpp.s
@@ -346,6 +383,7 @@ ProgressBar.s: ProgressBar.cpp.s
 # target to generate assembly for a file
 ProgressBar.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProgressBar.dir\build.make CMakeFiles/ProgressBar.dir/ProgressBar.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\core.dir\build.make CMakeFiles/core.dir/ProgressBar.cpp.s
 .PHONY : ProgressBar.cpp.s
 
 # Help Target
@@ -361,10 +399,12 @@ help:
 	@echo ... list_install_components
 	@echo ... rebuild_cache
 	@echo ... ProgressBar
+	@echo ... core
 	@echo ... gmock
 	@echo ... gmock_main
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... test
 	@echo ... LoaderWxApp.obj
 	@echo ... LoaderWxApp.i
 	@echo ... LoaderWxApp.s

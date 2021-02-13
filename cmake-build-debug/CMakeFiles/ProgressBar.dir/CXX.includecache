@@ -12,35 +12,47 @@ C:/Users/Francesco Villi/CLionProjects/ProgressBar/wx/wxprec.h
 wx/wx.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/wx/wx.h
 
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.cpp
+LoaderWxMain.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.h
+
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxMain.h
+LoaderWxApp.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/LoaderWxApp.h
+ManagerFile.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h
+ProgressBar.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.h
+
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.cpp
 ManagerFile.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h
 ProgressBar.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.h
-stdio.h
+cstdio
 -
 iostream
 -
 
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h
+filesystem
+-
+Subject.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.h
 wx/wxprec.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/wx/wxprec.h
 wx/wx.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/wx/wx.h
-Subject.h
-C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.h
 
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.h
 
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/ProgressBar.h
 wx/wxprec.h
 -
-ManagerFile.h
-C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h
 wx/wx.h
 -
-wx/progdlg.h
--
+ManagerFile.h
+C:/Users/Francesco Villi/CLionProjects/ProgressBar/ManagerFile.h
 Observer.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.h
 LoaderWxApp.h
@@ -49,10 +61,12 @@ Subject.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.h
 
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/Subject.h
-list
+vector
 -
 Observer.h
 C:/Users/Francesco Villi/CLionProjects/ProgressBar/Observer.h
+list
+-
 
 C:/wxWidgets-3.1.4/include/wx/accel.h
 wx/defs.h
@@ -1191,12 +1205,6 @@ C:/wxWidgets-3.1.4/include/wx/generic/wx/gdicmn.h
 C:/wxWidgets-3.1.4/include/wx/generic/panelg.h
 wx/bitmap.h
 C:/wxWidgets-3.1.4/include/wx/generic/wx/bitmap.h
-
-C:/wxWidgets-3.1.4/include/wx/generic/progdlgg.h
-wx/dialog.h
-C:/wxWidgets-3.1.4/include/wx/generic/wx/dialog.h
-wx/weakref.h
-C:/wxWidgets-3.1.4/include/wx/generic/wx/weakref.h
 
 C:/wxWidgets-3.1.4/include/wx/generic/region.h
 
@@ -2360,8 +2368,6 @@ C:/wxWidgets-3.1.4/include/wx/msw/wx/gdicmn.h
 wx/colour.h
 C:/wxWidgets-3.1.4/include/wx/msw/wx/colour.h
 
-C:/wxWidgets-3.1.4/include/wx/msw/progdlg.h
-
 C:/wxWidgets-3.1.4/include/wx/msw/radiobox.h
 wx/statbox.h
 C:/wxWidgets-3.1.4/include/wx/msw/wx/statbox.h
@@ -2821,14 +2827,6 @@ C:/wxWidgets-3.1.4/include/wx/wx/chkconf.h
 C:/wxWidgets-3.1.4/include/wx/platinfo.h
 wx/string.h
 C:/wxWidgets-3.1.4/include/wx/wx/string.h
-
-C:/wxWidgets-3.1.4/include/wx/progdlg.h
-wx/defs.h
-C:/wxWidgets-3.1.4/include/wx/wx/defs.h
-wx/generic/progdlgg.h
-C:/wxWidgets-3.1.4/include/wx/wx/generic/progdlgg.h
-wx/msw/progdlg.h
-C:/wxWidgets-3.1.4/include/wx/wx/msw/progdlg.h
 
 C:/wxWidgets-3.1.4/include/wx/qt/accel.h
 wx/vector.h
