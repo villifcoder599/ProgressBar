@@ -13,13 +13,13 @@ BEGIN_EVENT_TABLE(LoaderWxMain,wxFrame)
 END_EVENT_TABLE()
 
 LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,-1,title) {
-    wxMenuBar* menubar=new wxMenuBar();
-    wxMenu *menu=new wxMenu("");
-    wxBoxSizer *hbox_pathFile=new wxBoxSizer(wxHORIZONTAL);
-    wxBoxSizer *hbox_listBox=new wxBoxSizer(wxHORIZONTAL);
-    wxBoxSizer *hbox_progress=new wxBoxSizer(wxHORIZONTAL);
-    wxBoxSizer *hbox_Buttons=new wxBoxSizer(wxHORIZONTAL);
-    wxMenu *helpMenu=new wxMenu();
+    auto *menubar=new wxMenuBar();
+    auto *menu=new wxMenu("");
+    auto *hbox_pathFile=new wxBoxSizer(wxHORIZONTAL);
+    auto *hbox_listBox=new wxBoxSizer(wxHORIZONTAL);
+    auto *hbox_progress=new wxBoxSizer(wxHORIZONTAL);
+    auto *hbox_Buttons=new wxBoxSizer(wxHORIZONTAL);
+    auto *helpMenu=new wxMenu();
     panel=new wxPanel(this,-1);
     m_MainBox=new wxBoxSizer(wxVERTICAL);
     m_Button_ChooseFiles=new wxButton(panel, idButtonChoose, "Choose files", wxDefaultPosition, wxDefaultSize, 0);
@@ -70,7 +70,7 @@ void LoaderWxMain::onQuit(wxCommandEvent &event){
 
 void LoaderWxMain::onAbout(wxCommandEvent &event)
 {
-    wxMessageBox(("Simulazione caricamento file"));
+//    wxMessageBox(("Simulazione caricamento file"));
 }
 
 
@@ -89,7 +89,10 @@ void LoaderWxMain::onClickChooseFiles(wxCommandEvent &event) {
 
 void LoaderWxMain::onClickLoad(wxCommandEvent &event) {
     if(!listBox->IsEmpty()) {
+        dirDialog->setRangeProgressBar();
         dirDialog->LoadFile();
+
+        dirDialog->setValueProgressBar(0);
         listBox->Clear();
         label_path->Clear();
     }
