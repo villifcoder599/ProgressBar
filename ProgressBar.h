@@ -5,14 +5,20 @@
 #ifndef PROGRESSBAR_PROGRESSBAR_H
 #define PROGRESSBAR_PROGRESSBAR_H
 #include <wx/wxprec.h>
-#include "ManagerFile.h"
+
+#ifdef __BORLANDC__
+#   pragma hdrstop
+#endif
+
 #ifndef WX_PRECOMP
-    #include <wx/wx.h>
-#include <wx/progdlg.h>
+// Include your minimal set of headers here, or wx.h
+#   include <wx/wx.h>
+#endif
+#include "ManagerFile.h"
 #include "Observer.h"
 #include "LoaderWxApp.h"
 #include "Subject.h"
-#endif
+
 
 class ProgressBar :public wxGauge, public Observer {
 private:
@@ -27,7 +33,9 @@ public:
                 long style = wxGA_HORIZONTAL
                 );
     void update() override;
-    ~ProgressBar() override;
+    void setRange(int r);
+    void setValue(int value);
+    virtual ~ProgressBar();
 };
 
 

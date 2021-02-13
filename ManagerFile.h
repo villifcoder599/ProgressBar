@@ -4,13 +4,11 @@
 
 #ifndef PROGRESSBAR_MANAGERFILE_H
 #define PROGRESSBAR_MANAGERFILE_H
-
-
+#include <filesystem>
+#include "Subject.h"
 #include "wx/wxprec.h"
 #ifndef WX_PRECOMP
 #	include "wx/wx.h"
-#include "Subject.h"
-
 #endif
 
 class ManagerFile: public wxFileDialog, public Subject {
@@ -21,14 +19,19 @@ public:
     void LoadFile();
     wxArrayString getAllPaths();
     int getLoadPaths();
-    void addPath(wxString path);
+    void addPath(const wxString path);
     void attach(Observer *obs) override;
     void detach(Observer *obs) override;
     void notify() override;
-    ~ManagerFile();
+    void setRangeProgressBar();
+    void setValueProgressBar(int value);
+    std::list<Observer*> *getObservers();
+    virtual ~ManagerFile();
+
 private:
     wxArrayString paths;
     int loadPaths=0;
+    int errori=0;
 };
 
 
