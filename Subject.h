@@ -5,9 +5,9 @@
 
 #ifndef PROGRESSBAR_SUBJECT_H
 #define PROGRESSBAR_SUBJECT_H
-#include <list>
+#include <vector>
 #include "Observer.h"
-
+#include <list>
 
 class Subject {
 public:
@@ -16,7 +16,7 @@ public:
     virtual void notify()=0;
     virtual ~Subject()=default;
 protected:
-    std::vector<Observer*> observers;
+    std::list<Observer*> observers;
 };
 
 
