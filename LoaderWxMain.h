@@ -11,14 +11,14 @@
 class LoaderWxMain: public wxFrame {
 public:
     LoaderWxMain(wxFrame* frame,const wxString &title);
-    ~LoaderWxMain();
+    ~LoaderWxMain() override;
 private:
     wxBoxSizer *m_MainBox;
     wxButton* m_Button_ChooseFiles;
     wxButton* m_Button_LoadFiles;
     wxPanel *panel;
     wxStaticText *m_Label_Button_ChooseFiles;
-    const wxColour *m_background_color;
+    wxColour *m_background_color;
     ProgressBar *progressBar;
     wxListBox *listBox;
     wxTextCtrl *label_path;
