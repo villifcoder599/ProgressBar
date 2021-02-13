@@ -3,30 +3,36 @@
 //
 #include "ManagerFile.h"
 #include "ProgressBar.h"
-#include <stdio.h>
+#include <cstdio>
 #include <iostream>
-ManagerFile::ManagerFile(wxWindow *parent, const wxString &message, long style):wxFileDialog(parent,message,"","","",style) {
+
+
+ManagerFile::ManagerFile(wxWindow *parent, const wxString &message, long style)
+                                        :wxFileDialog(parent,message,"","","",style) {
 
 }
 
 void ManagerFile::LoadFile() {
-    addPath("cartella/test.txt");
-    std::cout << paths.GetCount();
-    int errori=0;
+    this->loadPaths=0;
+    errori=0;
     for(int i=0;i<paths.GetCount();i++) {
         try {
-            FILE *pfile = fopen(paths[i], "r");
+            FILE *pfile = fopen(paths[0], "r");
             wxSleep(1);
+            fclose(pfile);
             if(pfile==nullptr) {
                 errori++;
-                throw std::exception();
+                throw std::invalid_argument("file non trovato");
             }
-        } catch (std::exception& e) { }
-        loadPaths++;
+            else
+                loadPaths++;
+        } catch (std::invalid_argument& e) { }
         notify();
     }
-    if(errori>0)
-        wxMessageBox("Sono stati trovati "+ std::to_string(errori) + " file non validi","alert");
+    wxSleep(1);
+    this->paths.clear();
+//    if(errori>0)
+//        wxMessageBox("Sono stati trovati "+ std::to_string(errori) + " file non validi","alert");
 }
 
 wxArrayString ManagerFile::getAllPaths() {
@@ -36,13 +42,14 @@ wxArrayString ManagerFile::getAllPaths() {
 
 
 void ManagerFile::notify() {
-    for(auto item:observers)
+    for(auto item:observers) {
         item->update();
+    }
 }
 
 void ManagerFile::detach(Observer *obs) {
     if(obs!=nullptr)
-        observers.erase(std::remove(observers.begin(), observers.end(), obs), observers.end());
+        observers.remove(obs);
 }
 
 void ManagerFile::attach(Observer *obs) {
@@ -55,9 +62,25 @@ ManagerFile::~ManagerFile() {
 }
 
 void ManagerFile::addPath(const wxString path) {
-    paths.Insert(path,0);
+    paths.push_back(path);
 }
 
 int ManagerFile::getLoadPaths() {
     return loadPaths;
+}
+
+std::list<Observer *> *ManagerFile::getObservers() {
+    return &observers;
+}
+
+void ManagerFile::setRangeProgressBar() {
+    for(auto item:observers)
+        if(auto pb=dynamic_cast<ProgressBar*>(item))
+            pb->setRange(this->getAllPaths().GetCount());
+}
+
+void ManagerFile::setValueProgressBar(int value) {
+    for(auto item:observers)
+        if(auto pb=dynamic_cast<ProgressBar*>(item))
+            pb->setValue(value);
 }
