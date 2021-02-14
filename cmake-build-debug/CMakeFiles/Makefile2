@@ -229,8 +229,8 @@ CMakeFiles/core.dir/clean:
 
 # All Build rule for target.
 test/CMakeFiles/test.dir/all: CMakeFiles/core.dir/all
-test/CMakeFiles/test.dir/all: test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
 test/CMakeFiles/test.dir/all: test/lib/googletest/googletest/CMakeFiles/gtest_main.dir/all
+test/CMakeFiles/test.dir/all: test/lib/googletest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\test.dir\build.make test/CMakeFiles/test.dir/depend
 	$(MAKE) $(MAKESILENT) -f test\CMakeFiles\test.dir\build.make test/CMakeFiles/test.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\Francesco Villi\CLionProjects\ProgressBar\cmake-build-debug\CMakeFiles" --progress-num=19,20,21,22 "Built target test"

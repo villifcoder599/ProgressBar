@@ -17,7 +17,7 @@ void ManagerFile::LoadFile() {
     errori=0;
     for(int i=0;i<paths.GetCount();i++) {
         try {
-            FILE *pfile = fopen(paths[0], "r");
+            FILE *pfile = fopen(paths[i], "r");
             wxSleep(1);
             fclose(pfile);
             if(pfile==nullptr) {
