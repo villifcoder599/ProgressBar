@@ -9,7 +9,7 @@ wxIMPLEMENT_APP(LoaderWxApp);
 
 
 bool LoaderWxApp::OnInit() {
-    LoaderWxMain *frame=new LoaderWxMain(NULL,"Application wxWidgets");
+    auto *frame=new LoaderWxMain(NULL,"Application wxWidgets");
     frame->SetMinSize(wxSize(350,350));
     frame->SetMaxSize(wxSize(700,800));
     frame->Show();

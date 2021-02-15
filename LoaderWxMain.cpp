@@ -56,9 +56,7 @@ LoaderWxMain::LoaderWxMain(wxFrame *frame, const wxString &title):wxFrame(frame,
     this->SetMenuBar(menubar);
     this->SetStatusText("Status bar");
 }
-LoaderWxMain::~LoaderWxMain(){
-
-}
+LoaderWxMain::~LoaderWxMain()= default;
 
 void LoaderWxMain::onClose(wxCloseEvent &event){
     Destroy();
@@ -70,7 +68,7 @@ void LoaderWxMain::onQuit(wxCommandEvent &event){
 
 void LoaderWxMain::onAbout(wxCommandEvent &event)
 {
-//    wxMessageBox(("Simulazione caricamento file"));
+    wxMessageBox(("Simulazione caricamento file"));
 }
 
 

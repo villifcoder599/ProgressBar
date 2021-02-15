@@ -10,7 +10,7 @@ TEST(ManagerFileTest, TestLetturaFileCorretti) {
     mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file1.txt)");
     mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file2.txt)");
     mf->LoadFile();
-    ASSERT_EQ(2,mf->getLoadPaths());
+    EXPECT_EQ(2,mf->getLoadPaths());
 }
 
 TEST(ManagerFileTest,TestLetturaFileErrato){

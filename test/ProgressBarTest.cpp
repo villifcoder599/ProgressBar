@@ -5,15 +5,23 @@
 #include "../ProgressBar.h"
 #include "../LoaderWxMain.h"
 #include <memory>
-TEST(ProgressBar, TestAttachAndDetach) {
+TEST(ProgressBar, TestAttach) {
     auto *mf=new ManagerFile(nullptr);
     auto *frame=new LoaderWxMain(NULL,"Application wxWidgets");
     auto *panel=new wxPanel(frame,-1);
     auto *pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
-    auto *observers_list=mf->getObservers();
-    EXPECT_EQ(observers_list->size(),1);
+    auto observers_list=mf->getObservers();
+    EXPECT_EQ(observers_list.size(),1);
+}
+TEST(ProgressBar,TestDetach){
+    auto *mf=new ManagerFile(nullptr);
+    auto *frame=new LoaderWxMain(NULL,"Application wxWidgets");
+    auto *panel=new wxPanel(frame,-1);
+    auto *pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
     mf->detach(pb);
-    EXPECT_EQ(observers_list->size(),0);
+    auto observers_list=mf->getObservers();
+    observers_list=mf->getObservers();
+    EXPECT_EQ(observers_list.size(),0);
 }
 TEST(ProgressBar, TestAvanzamentoFileCorretti){
     auto *mf=new ManagerFile(nullptr);
@@ -25,17 +33,4 @@ TEST(ProgressBar, TestAvanzamentoFileCorretti){
     mf->LoadFile();
     auto value=pb->GetValue();
     EXPECT_EQ(value,2);
-}
-
-TEST(ProgressBar,TestNonAvanzamentoFileSbagliato){
-    auto *mf=new ManagerFile(nullptr);
-    auto *frame=new LoaderWxMain(NULL,"Application wxWidgets");
-    auto *panel=new wxPanel(frame,-1);
-    auto *pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\fileNotFound.txt)");
-    try {
-        mf->LoadFile();
-    }catch(std::invalid_argument &e){}
-    auto value=pb->GetValue();
-    EXPECT_EQ(value,0);
 }

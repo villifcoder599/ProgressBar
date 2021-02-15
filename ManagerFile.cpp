@@ -13,7 +13,8 @@ ManagerFile::ManagerFile(wxWindow *parent, const wxString &message, long style)
 }
 
 void ManagerFile::LoadFile() {
-    this->loadPaths=0;
+    loadPaths=0;
+    //addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file8.txt)");
     errori=0;
     for(int i=0;i<paths.GetCount();i++) {
         try {
@@ -22,6 +23,7 @@ void ManagerFile::LoadFile() {
             fclose(pfile);
             if(pfile==nullptr) {
                 errori++;
+                //wxMessageBox(paths[i]+" non trovato");
                 throw std::invalid_argument("file non trovato");
             }
             else
@@ -30,14 +32,12 @@ void ManagerFile::LoadFile() {
         notify();
     }
     wxSleep(1);
-    this->paths.clear();
-//    if(errori>0)
-//        wxMessageBox("Sono stati trovati "+ std::to_string(errori) + " file non validi","alert");
+    paths.clear();
 }
 
 wxArrayString ManagerFile::getAllPaths() {
     GetPaths(paths);
-    return this->paths;
+    return paths;
 }
 
 
@@ -57,20 +57,18 @@ void ManagerFile::attach(Observer *obs) {
         observers.push_back(obs);
 }
 
-ManagerFile::~ManagerFile() {
+ManagerFile::~ManagerFile() = default;
 
-}
-
-void ManagerFile::addPath(const wxString path) {
+void ManagerFile::addPath(const wxString& path) {
     paths.push_back(path);
 }
 
-int ManagerFile::getLoadPaths() {
+int ManagerFile::getLoadPaths() const {
     return loadPaths;
 }
 
-std::list<Observer *> *ManagerFile::getObservers() {
-    return &observers;
+std::list<Observer *> ManagerFile::getObservers() {
+    return observers;
 }
 
 void ManagerFile::setRangeProgressBar() {

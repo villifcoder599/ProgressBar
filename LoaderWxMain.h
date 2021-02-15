@@ -11,7 +11,7 @@
 class LoaderWxMain: public wxFrame {
 public:
     LoaderWxMain(wxFrame* frame,const wxString &title);
-    ~LoaderWxMain() override;
+    virtual ~LoaderWxMain() override;
 private:
     wxBoxSizer *m_MainBox;
     wxButton* m_Button_ChooseFiles;
