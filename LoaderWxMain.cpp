@@ -77,7 +77,7 @@ void LoaderWxMain::onClickChooseFiles(wxCommandEvent &event) {
     if(dirDialog->ShowModal()==wxID_OK){
         label_path->SetLabel((dirDialog->getAllPaths())[0].substr(0,(dirDialog->getAllPaths())[0].find_last_of("\\")+1));
         if(!((dirDialog->getAllPaths()).IsEmpty())) {
-            for(auto item:dirDialog->getAllPaths()){
+            for(const auto& item:dirDialog->getAllPaths()){
                 listBox->Append(item.substr(item.find_last_of("\\")+1));
             }
 
@@ -87,9 +87,10 @@ void LoaderWxMain::onClickChooseFiles(wxCommandEvent &event) {
 
 void LoaderWxMain::onClickLoad(wxCommandEvent &event) {
     if(!listBox->IsEmpty()) {
-        dirDialog->setRangeProgressBar();
-        dirDialog->LoadFile();
-
+        dirDialog->clearRangeProgressBar();
+        try {
+            dirDialog->LoadFile();
+        }catch(std::invalid_argument &e){ }
         dirDialog->setValueProgressBar(0);
         listBox->Clear();
         label_path->Clear();
