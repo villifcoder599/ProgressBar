@@ -8,16 +8,16 @@
 ProgressBar::ProgressBar(ManagerFile *managerFile,wxWindow *parent, wxWindowID id, int range, const wxPoint &pos, const wxSize &size,
                          long style):wxGauge(parent,id,range,pos,size,style),managerFile(managerFile){
     if(this->managerFile!=nullptr)
-        this->managerFile->attach(this);
+        managerFile->attach(this);
 }
 
 void ProgressBar::update() {
-    this->SetValue(managerFile->getLoadPaths());
+    SetValue(managerFile->getLoadPaths());
 }
 
 ProgressBar::~ProgressBar(){
-    if (this->managerFile != nullptr)
-        this->managerFile->detach(this);
+    if (managerFile != nullptr)
+        managerFile->detach(this);
 }
 
 void ProgressBar::setRange(int r) {
