@@ -34,3 +34,17 @@ TEST(ProgressBar, TestAvanzamentoFileCorretti){
     auto value=pb->GetValue();
     EXPECT_EQ(value,2);
 }
+//aggiungi test con file errato in ingresso
+TEST(ProgressBar,TestAvanzamentoFileErrato){
+    auto *mf=new ManagerFile(nullptr);
+    auto *frame=new LoaderWxMain(NULL,"Application wxWidgets");
+    auto *panel=new wxPanel(frame,-1);
+    auto *pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
+    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file1.txt)");
+    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\not_exist.txt)");
+    try {
+        mf->LoadFile();
+    }catch(std::invalid_argument &e){}
+    auto value=pb->GetValue();
+    EXPECT_EQ(value,1);
+}
