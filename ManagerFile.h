@@ -23,16 +23,14 @@ public:
     void attach(Observer *obs) override;
     void detach(Observer *obs) override;
     void notify() override;
-    void setRangeProgressBar();
+    void clearRangeProgressBar();
     void setValueProgressBar(int value);
     virtual ~ManagerFile();
     std::list<Observer*> getObservers();
 
 private:
     wxArrayString paths;
-    int loadPaths=0;
-    int errori=0;
-
+    int loadpath=0;
 };
 
 
