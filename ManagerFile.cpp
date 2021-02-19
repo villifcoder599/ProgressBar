@@ -13,22 +13,14 @@ ManagerFile::ManagerFile(wxWindow *parent, const wxString &message, long style)
 }
 
 void ManagerFile::LoadFile() {
-    loadPaths=0;
-    //addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file8.txt)");
-    errori=0;
+    loadpath=0;
     for(int i=0;i<paths.GetCount();i++) {
-        try {
-            FILE *pfile = fopen(paths[i], "r");
-            wxSleep(1);
-            fclose(pfile);
-            if(pfile==nullptr) {
-                errori++;
-                //wxMessageBox(paths[i]+" non trovato");
-                throw std::invalid_argument("file non trovato");
-            }
-            else
-                loadPaths++;
-        } catch (std::invalid_argument& e) { }
+        FILE *pfile = fopen(paths[i], "r");
+        wxSleep(1);
+        fclose(pfile);
+        if(pfile==nullptr)
+            throw std::invalid_argument("file non trovato");
+        loadpath++;
         notify();
     }
     wxSleep(1);
@@ -63,15 +55,11 @@ void ManagerFile::addPath(const wxString& path) {
     paths.push_back(path);
 }
 
-int ManagerFile::getLoadPaths() const {
-    return loadPaths;
-}
-
 std::list<Observer *> ManagerFile::getObservers() {
     return observers;
 }
 
-void ManagerFile::setRangeProgressBar() {
+void ManagerFile::clearRangeProgressBar() {
     for(auto item:observers)
         if(auto pb=dynamic_cast<ProgressBar*>(item))
             pb->setRange(this->getAllPaths().GetCount());
@@ -81,4 +69,8 @@ void ManagerFile::setValueProgressBar(int value) {
     for(auto item:observers)
         if(auto pb=dynamic_cast<ProgressBar*>(item))
             pb->setValue(value);
+}
+
+int ManagerFile::getLoadPaths() const {
+    return loadpath;
 }
