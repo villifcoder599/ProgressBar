@@ -12,7 +12,10 @@ TEST(ProgressBar, TestAttach) {
     auto *pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
     auto observers_list=mf->getObservers();
     EXPECT_EQ(observers_list.size(),1);
-    delete mf;
+    free(mf);
+    free(frame);
+    free(panel);
+    free(pb);
 }
 TEST(ProgressBar,TestDetach){
     auto *mf=new ManagerFile(nullptr);
@@ -23,7 +26,10 @@ TEST(ProgressBar,TestDetach){
     auto observers_list=mf->getObservers();
     observers_list=mf->getObservers();
     EXPECT_EQ(observers_list.size(),0);
-    delete mf;
+    free(mf);
+    free(frame);
+    free(panel);
+    free(pb);
 }
 TEST(ProgressBar, TestAvanzamentoFileCorretti){
     auto *mf=new ManagerFile(nullptr);
@@ -35,7 +41,10 @@ TEST(ProgressBar, TestAvanzamentoFileCorretti){
     mf->LoadFile();
     auto value=pb->GetValue();
     EXPECT_EQ(value,2);
-    delete mf;
+    free(mf);
+    free(frame);
+    free(panel);
+    free(pb);
 }
 //aggiungi test con file errato in ingresso
 TEST(ProgressBar,TestAvanzamentoFileErrato){
@@ -50,5 +59,8 @@ TEST(ProgressBar,TestAvanzamentoFileErrato){
     }catch(std::invalid_argument &e){}
     auto value=pb->GetValue();
     EXPECT_EQ(value,1);
-    delete mf;
+    free(mf);
+    free(frame);
+    free(panel);
+    free(pb);
 }
