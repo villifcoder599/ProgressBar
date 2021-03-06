@@ -1,5 +1,7 @@
 project(test)
-find_package(wxWidgets 3.1.4 COMPONENTS net core base REQUIRED)
+set(wxWidgets_ROOT_DIR "C:/wxWidgets-3.1.4")
+set(wxWidgets_LIB_DIR "C:/wxWidgets-3.1.4/lib/gcc_dll")
+find_package(wxWidgets COMPONENTS net core base REQUIRED)
 include(${wxWidgets_USE_FILE})
 add_subdirectory(./lib/googletest)
 set(gtest_SOURCE_DIR, ./lib/googletest/)
