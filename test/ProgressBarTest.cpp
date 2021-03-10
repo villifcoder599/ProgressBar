@@ -28,8 +28,8 @@ TEST(ProgressBar, TestAvanzamentoFileCorretti){
     auto frame=new LoaderWxMain(NULL,"Application wxWidgets");
     auto panel=new wxPanel(frame,-1);
     auto pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file1.txt)");
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file2.txt)");
+    mf->addPath(R"(.\test\files\file1.txt)");
+    mf->addPath(R"(.\test\files\file2.txt)");
     mf->LoadFile();
     auto value=pb->GetValue();
     EXPECT_EQ(value,2);
@@ -40,8 +40,8 @@ TEST(ProgressBar,TestAvanzamentoFileErrato){
     auto frame=new LoaderWxMain(NULL,"Application wxWidgets");
     auto panel=new wxPanel(frame,-1);
     auto pb=new ProgressBar(mf,panel,wxID_ANY,1,wxDefaultPosition,wxSize(500,25),wxGA_HORIZONTAL);
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\file1.txt)");
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\not_exist.txt)");
+    mf->addPath(R"(.\test\files\file1.txt)");
+    mf->addPath(R"(.\test\files\not_exist.txt)");
     try {
         mf->LoadFile();
     }catch(std::invalid_argument &e){}

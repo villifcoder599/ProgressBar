@@ -6,6 +6,6 @@
 
 TEST(ManagerFileTest,TestLetturaFileErrato){
     auto mf=new ManagerFile(nullptr);
-    mf->addPath(R"(C:\Users\Francesco Villi\CLionProjects\ProgressBar\test\files\fileNotFound.txt)");
+    mf->addPath(R"(.\test\files\fileNotFound.txt)");
     EXPECT_THROW(mf->LoadFile(),std::invalid_argument);
 }
